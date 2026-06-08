@@ -26,7 +26,7 @@ const observer = new IntersectionObserver(
       document.body.dataset.theme = entry.target.dataset.theme;
     });
   },
-  { threshold: 0.45 },
+  { rootMargin: "-40% 0px -40% 0px" },
 );
 
 document.querySelectorAll(".theme-section").forEach((section) => {

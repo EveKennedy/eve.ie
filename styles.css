@@ -10,35 +10,35 @@
 }
 
 body[data-theme="music"] {
-  --paper: #f2eadc;
-  --panel: #fbf7ef;
-  --accent: #6b4e2e;
-  --accent-strong: #3b2c1b;
-  --line: #d7c8b0;
+  --paper: #e8d8c0;
+  --panel: #fff8ed;
+  --accent: #7a532c;
+  --accent-strong: #3f2a17;
+  --line: #c8af8d;
 }
 
 body[data-theme="stem"] {
-  --paper: #eef0e8;
-  --panel: #f9faf5;
-  --accent: #4f5b3a;
-  --accent-strong: #2f3824;
-  --line: #cbd1bf;
+  --paper: #dfe8d4;
+  --panel: #f8fbf1;
+  --accent: #4f6639;
+  --accent-strong: #29381f;
+  --line: #b8c8a9;
 }
 
 body[data-theme="media"] {
-  --paper: #eeeeea;
-  --panel: #fafaf7;
-  --accent: #57534a;
-  --accent-strong: #302e29;
-  --line: #cfcbc2;
+  --paper: #ddd9cf;
+  --panel: #fbfaf4;
+  --accent: #665f52;
+  --accent-strong: #302c25;
+  --line: #c0baac;
 }
 
 body[data-theme="community"] {
-  --paper: #f0eee2;
-  --panel: #fbfaf3;
-  --accent: #62633b;
-  --accent-strong: #3b3d25;
-  --line: #d2ceb9;
+  --paper: #e6dfbd;
+  --panel: #fffcef;
+  --accent: #696a35;
+  --accent-strong: #393b1e;
+  --line: #c7c08c;
 }
 
 * {
@@ -54,7 +54,9 @@ body {
   color: var(--ink);
   background: var(--paper);
   font-size: 16px;
-  transition: background 180ms ease;
+  transition:
+    background 180ms ease,
+    color 180ms ease;
 }
 
 a {
@@ -66,6 +68,9 @@ button {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
   display: flex;
   min-height: 56px;
   align-items: center;
@@ -73,6 +78,9 @@ button {
   border-bottom: 1px solid var(--line);
   padding: 0 32px;
   background: var(--paper);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease;
 }
 
 .brand {
@@ -166,6 +174,9 @@ p {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease;
 }
 
 .profile-panel {
@@ -205,6 +216,7 @@ p {
 .section {
   border-top: 1px solid var(--line);
   padding: 30px 0;
+  transition: border-color 180ms ease;
 }
 
 .split {
@@ -253,6 +265,9 @@ p {
   border-radius: 8px;
   padding: 10px;
   background: var(--panel);
+  transition:
+    background 180ms ease,
+    border-color 180ms ease;
 }
 
 .fret-lines {
@@ -397,6 +412,9 @@ p {
   color: var(--ink);
   background: var(--panel);
   font-size: 0.92rem;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease;
 }
 
 .link-list {
@@ -421,6 +439,9 @@ p {
   color: var(--muted);
   background: var(--panel);
   font-size: 0.92rem;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease;
 }
 
 @media (max-width: 820px) {
