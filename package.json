@@ -1,0 +1,17 @@
+{
+  "name": "eve-personal-website",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "../node_modules/.bin/vite --host 127.0.0.1",
+    "build": "../node_modules/.bin/vite build",
+    "preview": "../node_modules/.bin/vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
