@@ -128,7 +128,8 @@ p {
 
 .profile-panel,
 .project-list,
-.chord-fact {
+.chord-fact,
+.interest-card {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -196,26 +197,32 @@ p {
   margin-bottom: 16px;
 }
 
-.chord-board {
+.section-header p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.chord-board,
+.interest-board {
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: 16px;
 }
 
-.chord-actions {
+.chord-neck {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
 }
 
-.chord-button {
-  min-height: 70px;
+.chord-button,
+.interest-button {
   border: 1px solid var(--line);
   border-radius: 8px;
   color: var(--ink);
   background: var(--panel);
   cursor: pointer;
-  font-size: 1.15rem;
   font-weight: 700;
   transition:
     border-color 140ms ease,
@@ -223,25 +230,46 @@ p {
     color 140ms ease;
 }
 
+.chord-button {
+  min-height: 70px;
+  font-size: 1.15rem;
+}
+
+.interest-button {
+  min-height: 44px;
+  padding: 0 12px;
+  text-align: left;
+}
+
 .chord-button:hover,
-.chord-button:focus-visible {
+.chord-button:focus-visible,
+.interest-button:hover,
+.interest-button:focus-visible {
   border-color: var(--accent);
   color: var(--accent-strong);
 }
 
-.chord-button.active {
+.chord-button.active,
+.interest-button.active {
   border-color: var(--accent-strong);
   color: #ffffff;
   background: var(--accent-strong);
 }
 
-.chord-fact {
+.chord-fact,
+.interest-card {
   min-height: 148px;
   padding: 20px;
 }
 
-.chord-fact p {
+.chord-fact p,
+.interest-card p {
   margin-bottom: 0;
+}
+
+.interest-tabs {
+  display: grid;
+  gap: 8px;
 }
 
 .project-list {
@@ -327,7 +355,8 @@ p {
 
   .intro,
   .split,
-  .chord-board {
+  .chord-board,
+  .interest-board {
     grid-template-columns: 1fr;
     gap: 20px;
   }

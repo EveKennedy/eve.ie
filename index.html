@@ -11,8 +11,9 @@
     <header class="site-header">
       <a class="brand" href="/">Eve Kennedy</a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
         <a href="#chords">Chords</a>
+        <a href="#projects">Projects</a>
+        <a href="#spark">Spark</a>
         <a href="#links">Links</a>
       </nav>
     </header>
@@ -22,52 +23,37 @@
         <div>
           <h1 id="intro-title">Eve Kennedy</h1>
           <p>
-            I am building a personal website about my projects, achievements,
-            interests, music taste, and the ways I like to make things.
+            Leaving Cert student in Headford, Galway, working across science
+            fairs, music, media, and student-led STEM spaces.
           </p>
         </div>
         <aside class="profile-panel" aria-label="Profile snapshot">
           <dl>
             <div>
               <dt>Based in</dt>
-              <dd>Add city or country</dd>
-            </div>
-            <div>
-              <dt>Interested in</dt>
-              <dd>Music, creative work, technology, people</dd>
+              <dd>Headford, Galway</dd>
             </div>
             <div>
               <dt>Currently</dt>
-              <dd>Add what you are studying, building, or exploring</dd>
+              <dd>Starting 6th year and studying for the Leaving Cert</dd>
+            </div>
+            <div>
+              <dt>Interested in</dt>
+              <dd>STEM, music, photography, videography, and community projects</dd>
             </div>
           </dl>
         </aside>
       </section>
 
-      <section class="section split" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About me</h2>
-        <div class="section-body">
-          <p>
-            Write the version of your story that sounds like you: what you care
-            about, what makes you curious, what you are proud of, and what you
-            want people to understand after meeting you.
-          </p>
-          <p>
-            This section can mix personality and capability. It should feel
-            specific, not like a formal bio.
-          </p>
-        </div>
-      </section>
-
       <section class="section split" id="chords" aria-labelledby="chords-title">
-        <h2 id="chords-title">Chord notes</h2>
+        <h2 id="chords-title">Click a chord</h2>
         <div class="chord-board">
-          <div class="chord-actions" aria-label="Guitar chord facts">
+          <div class="chord-neck" aria-label="Guitar chord facts">
             <button
               type="button"
               class="chord-button active"
               data-title="C major"
-              data-fact="Use this for a warm fact about your personality, like how friends would describe you or what gives you energy."
+              data-fact="I am drawn to projects that make technical ideas useful for people: safer roads, better repair systems, and STEM clubs that give students support earlier."
             >
               C
             </button>
@@ -75,23 +61,39 @@
               type="button"
               class="chord-button"
               data-title="G major"
-              data-fact="Use this for a project fact: the kind of thing you like building and the problems you enjoy solving."
+              data-fact="I have played guitar since I was seven, and I perform regularly at open mics and local gigs."
             >
               G
             </button>
             <button
               type="button"
               class="chord-button"
+              data-title="D major"
+              data-fact="I am a classically trained violinist and completed all nine Trinity College London grades with distinctions."
+            >
+              D
+            </button>
+            <button
+              type="button"
+              class="chord-button"
               data-title="A minor"
-              data-fact="Use this for a music fact: artists, songs, instruments, concerts, or how music fits into your life."
+              data-fact="I do photography and videography locally, especially when people need something practical, sharp, and ready to use."
             >
               Am
             </button>
             <button
               type="button"
               class="chord-button"
+              data-title="E minor"
+              data-fact="I manage social media for Spark Innovation, a student-led STEM organisation building stronger support for young people around Galway."
+            >
+              Em
+            </button>
+            <button
+              type="button"
+              class="chord-button"
               data-title="F major"
-              data-fact="Use this for an achievement: something you earned, led, completed, improved, or learned the hard way."
+              data-fact="I have competed at Young Scientist twice and won awards for both medical-device thinking and safety innovation."
             >
               F
             </button>
@@ -99,8 +101,58 @@
           <article class="chord-fact" aria-live="polite">
             <h3 id="chord-title">C major</h3>
             <p id="chord-fact">
-              Use this for a warm fact about your personality, like how friends
-              would describe you or what gives you energy.
+              I am drawn to projects that make technical ideas useful for people:
+              safer roads, better repair systems, and STEM clubs that give
+              students support earlier.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="interests" aria-labelledby="interests-title">
+        <h2 id="interests-title">Interest board</h2>
+        <div class="interest-board">
+          <div class="interest-tabs" aria-label="Interests">
+            <button
+              type="button"
+              class="interest-button active"
+              data-interest-title="STEM"
+              data-interest-copy="I like STEM most when it becomes something testable and useful. My Young Scientist projects have focused on assistive safety and vehicle repair, and Spark gives me a way to help other students build earlier."
+            >
+              STEM
+            </button>
+            <button
+              type="button"
+              class="interest-button"
+              data-interest-title="Music"
+              data-interest-copy="Music is both structured and social for me: classical violin training, guitar since childhood, open mics, local gigs, and the discipline of learning pieces properly."
+            >
+              Music
+            </button>
+            <button
+              type="button"
+              class="interest-button"
+              data-interest-title="Media"
+              data-interest-copy="Photography and videography let me make things for real people nearby, from social posts to event coverage and practical visual work."
+            >
+              Media
+            </button>
+            <button
+              type="button"
+              class="interest-button"
+              data-interest-title="Community"
+              data-interest-copy="Through Spark Innovation, I help create student-led spaces where people can prototype, meet speakers, and get support around STEM in Headford and Galway."
+            >
+              Community
+            </button>
+          </div>
+          <article class="interest-card" aria-live="polite">
+            <h3 id="interest-title">STEM</h3>
+            <p id="interest-copy">
+              I like STEM most when it becomes something testable and useful. My
+              Young Scientist projects have focused on assistive safety and
+              vehicle repair, and Spark gives me a way to help other students
+              build earlier.
             </p>
           </article>
         </div>
@@ -109,37 +161,52 @@
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-header">
           <h2 id="projects-title">Projects</h2>
-          <a href="mailto:hello@example.com">Contact</a>
+          <p>Selected work</p>
         </div>
         <div class="project-list">
           <article class="project">
             <div>
-              <h3>Project name</h3>
+              <h3>Motion sensor wristband</h3>
               <p>
-                What it is, why you made it, what you used, and what changed
-                because of it.
+                A Young Scientist 2023 project designed to help visually
+                impaired people cross the road, later winning the Boston
+                Scientific Medical Devices Award at SciFest Galway.
               </p>
             </div>
-            <a href="#">Link</a>
+            <a href="https://scifest.ie/Page/Atlantic-Technological-University-Galway-Awards-2023/519199/Index.html" target="_blank" rel="noreferrer">SciFest</a>
           </article>
           <article class="project">
             <div>
-              <h3>Project name</h3>
+              <h3>Memory metal crumple zones</h3>
               <p>
-                Add a second project. This can be school, personal, creative, or
-                community work.
+                A Young Scientist project investigating nitinol as a material
+                for car crumple zones, with the aim of making repairs safer,
+                cheaper, and less wasteful.
               </p>
             </div>
-            <a href="#">Link</a>
+            <a href="https://stripeyste.com/winners-2026-full" target="_blank" rel="noreferrer">Award</a>
           </article>
           <article class="project">
             <div>
-              <h3>Project name</h3>
+              <h3>Reforma</h3>
               <p>
-                Add a third project or something you are still developing.
+                A team business concept developed from the crumple-zone project
+                during Stripe Young Scientist Business Bootcamp, winning the
+                inaugural bootcamp.
               </p>
             </div>
-            <a href="#">Link</a>
+            <a href="https://www.linkedin.com/posts/university-college-dublin_a-team-of-five-secondary-school-activity-7454462631001747456-KYTx" target="_blank" rel="noreferrer">UCD</a>
+          </article>
+          <article class="project">
+            <div>
+              <h3>Spark Innovation</h3>
+              <p>
+                A student-led STEM organisation running clubs in Headford and
+                Galway, with meetings, speakers, and practical support for young
+                people who want to build.
+              </p>
+            </div>
+            <a href="https://sparkinnovationireland.com" target="_blank" rel="noreferrer">Spark</a>
           </article>
         </div>
       </section>
@@ -147,32 +214,52 @@
       <section class="section split" id="achievements" aria-labelledby="achievements-title">
         <h2 id="achievements-title">Achievements</h2>
         <ul class="plain-list">
-          <li>Add an award, result, certification, leadership role, or milestone.</li>
-          <li>Add something you improved, organized, performed, or completed.</li>
-          <li>Add a moment that shows persistence, skill, or initiative.</li>
+          <li>AirNav Ireland Safety Innovation Award at Stripe Young Scientist for Memory metal crumple zones.</li>
+          <li>Runner-up best project at SciFest regional Galway for the nitinol crumple-zone project.</li>
+          <li>Boston Scientific Medical Devices Award at SciFest Galway for a motion sensor wristband project.</li>
+          <li>Winner of the inaugural Stripe Young Scientist Business Bootcamp with Reforma.</li>
+          <li>Completed all nine Trinity College London violin grades with distinctions.</li>
         </ul>
+      </section>
+
+      <section class="section split" id="spark" aria-labelledby="spark-title">
+        <h2 id="spark-title">Spark Innovation</h2>
+        <div class="section-body">
+          <p>
+            I recently took over as manager of Spark Innovation. We run STEM
+            clubs in Headford and Galway, hold regular meetings, and invite
+            speakers so students have more support if they want to build,
+            compete, or explore STEM seriously.
+          </p>
+          <p>
+            I also manage Spark's social media, which means shaping how the work
+            is presented, keeping the community updated, and helping the group
+            feel active and visible.
+          </p>
+        </div>
       </section>
 
       <section class="section split" id="capabilities" aria-labelledby="capabilities-title">
         <h2 id="capabilities-title">Capabilities</h2>
         <ul class="tag-list">
-          <li>Creative direction</li>
-          <li>Project planning</li>
-          <li>Writing</li>
-          <li>Research</li>
-          <li>Communication</li>
-          <li>Add your skills</li>
+          <li>Scientific research</li>
+          <li>Prototyping</li>
+          <li>Public speaking</li>
+          <li>Music performance</li>
+          <li>Photography</li>
+          <li>Videography</li>
+          <li>Social media</li>
+          <li>Community leadership</li>
         </ul>
       </section>
 
-      <section class="section split" id="interests" aria-labelledby="interests-title">
-        <h2 id="interests-title">Interests</h2>
-        <div class="section-body">
-          <p>
-            Music belongs here, but so do the other things that make you
-            memorable: books, places, causes, design, sport, film, fashion,
-            coding, photography, or anything you return to because it matters.
-          </p>
+      <section class="section split" id="features" aria-labelledby="features-title">
+        <h2 id="features-title">Features</h2>
+        <div class="link-list">
+          <a href="https://www.galwaybayfm.ie/galway-bay-fm-news-desk/galway-students-win-eight-awards-at-2026-stripe-young-scientist-of-the-year-211219" target="_blank" rel="noreferrer">Galway Bay FM</a>
+          <a href="https://www.rsa.ie/road-safety/education/road-safety-awards/young-scientist-road-safety-entrants" target="_blank" rel="noreferrer">Road Safety Authority</a>
+          <a href="https://stripeyste.com/winners-2026-full" target="_blank" rel="noreferrer">Stripe Young Scientist</a>
+          <a href="https://scifest.ie/Page/Atlantic-Technological-University-Galway-Awards-2023/519199/Index.html" target="_blank" rel="noreferrer">SciFest Galway</a>
         </div>
       </section>
 
