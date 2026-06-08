@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="site-header">
+      <a class="brand" href="/">Eve Kennedy</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="mailto:hello@example.com">Email</a>
+      </nav>
+    </header>
+
     <main class="page">
-      <section class="hero" aria-labelledby="intro-title">
-        <p class="eyebrow">Personal Website</p>
-        <h1 id="intro-title">Eve Kennedy</h1>
-        <p class="intro">
-          A home for my projects, writing, and the things I am building next.
+      <section class="intro" aria-labelledby="intro-title">
+        <h1 id="intro-title">Personal website.</h1>
+        <p>
+          I am building this into a clean place for my work, notes, and current
+          projects.
         </p>
-        <div class="actions" aria-label="Primary links">
-          <a href="#projects">View projects</a>
-          <a href="mailto:hello@example.com">Contact me</a>
-        </div>
       </section>
 
       <section class="section" id="about" aria-labelledby="about-title">
@@ -29,19 +34,31 @@
       </section>
 
       <section class="section" id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Projects</h2>
-        <div class="project-grid">
+        <div class="section-header">
+          <h2 id="projects-title">Projects</h2>
+          <a href="mailto:hello@example.com">Get in touch</a>
+        </div>
+        <div class="project-list">
           <article class="project">
-            <h3>Project One</h3>
-            <p>Add a short description of something you have made.</p>
+            <div>
+              <h3>Project One</h3>
+              <p>Add a short description of something you have made.</p>
+            </div>
+            <a href="#">View</a>
           </article>
           <article class="project">
-            <h3>Project Two</h3>
-            <p>Add another project, portfolio piece, or achievement.</p>
+            <div>
+              <h3>Project Two</h3>
+              <p>Add another project, portfolio piece, or achievement.</p>
+            </div>
+            <a href="#">View</a>
           </article>
           <article class="project">
-            <h3>Project Three</h3>
-            <p>Use this space for a future idea or work in progress.</p>
+            <div>
+              <h3>Project Three</h3>
+              <p>Use this space for a future idea or work in progress.</p>
+            </div>
+            <a href="#">View</a>
           </article>
         </div>
       </section>
