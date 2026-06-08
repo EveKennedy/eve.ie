@@ -9,6 +9,38 @@
   --line: #d6cfbf;
 }
 
+body[data-theme="music"] {
+  --paper: #f2eadc;
+  --panel: #fbf7ef;
+  --accent: #6b4e2e;
+  --accent-strong: #3b2c1b;
+  --line: #d7c8b0;
+}
+
+body[data-theme="stem"] {
+  --paper: #eef0e8;
+  --panel: #f9faf5;
+  --accent: #4f5b3a;
+  --accent-strong: #2f3824;
+  --line: #cbd1bf;
+}
+
+body[data-theme="media"] {
+  --paper: #eeeeea;
+  --panel: #fafaf7;
+  --accent: #57534a;
+  --accent-strong: #302e29;
+  --line: #cfcbc2;
+}
+
+body[data-theme="community"] {
+  --paper: #f0eee2;
+  --panel: #fbfaf3;
+  --accent: #62633b;
+  --accent-strong: #3b3d25;
+  --line: #d2ceb9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -22,6 +54,7 @@ body {
   color: var(--ink);
   background: var(--paper);
   font-size: 16px;
+  transition: background 180ms ease;
 }
 
 a {
@@ -211,13 +244,36 @@ p {
 }
 
 .chord-neck {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 8px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  background: var(--panel);
+}
+
+.fret-lines {
+  position: absolute;
+  inset: 10px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  pointer-events: none;
+}
+
+.fret-lines div {
+  border-left: 1px solid var(--line);
+}
+
+.fret-lines div:last-child {
+  border-right: 1px solid var(--line);
 }
 
 .chord-button,
 .interest-button {
+  position: relative;
   border: 1px solid var(--line);
   border-radius: 8px;
   color: var(--ink);
@@ -236,9 +292,23 @@ p {
 }
 
 .interest-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   min-height: 44px;
   padding: 0 12px;
   text-align: left;
+}
+
+.interest-button svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
 }
 
 .chord-button:hover,
@@ -335,6 +405,24 @@ p {
   gap: 16px;
 }
 
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.photo-slot {
+  display: grid;
+  min-height: 160px;
+  align-items: end;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 14px;
+  color: var(--muted);
+  background: var(--panel);
+  font-size: 0.92rem;
+}
+
 @media (max-width: 820px) {
   .site-header {
     align-items: flex-start;
@@ -374,5 +462,9 @@ p {
   .project {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
   }
 }

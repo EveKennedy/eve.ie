@@ -15,3 +15,20 @@ document.querySelectorAll(".interest-button").forEach((button) => {
     document.querySelector("#interest-copy").textContent = button.dataset.interestCopy;
   });
 });
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) {
+        return;
+      }
+
+      document.body.dataset.theme = entry.target.dataset.theme;
+    });
+  },
+  { threshold: 0.45 },
+);
+
+document.querySelectorAll(".theme-section").forEach((section) => {
+  observer.observe(section);
+});
