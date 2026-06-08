@@ -5,61 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eve Kennedy | Personal Website</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="/">Eve Kennedy</a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
         <a href="#projects">Projects</a>
-        <a href="mailto:hello@example.com">Email</a>
+        <a href="#chords">Chords</a>
+        <a href="#links">Links</a>
       </nav>
     </header>
 
     <main class="page">
       <section class="intro" aria-labelledby="intro-title">
-        <h1 id="intro-title">Personal website.</h1>
-        <p>
-          I am building this into a clean place for my work, notes, and current
-          projects.
-        </p>
+        <div>
+          <h1 id="intro-title">Eve Kennedy</h1>
+          <p>
+            I am building a personal website about my projects, achievements,
+            interests, music taste, and the ways I like to make things.
+          </p>
+        </div>
+        <aside class="profile-panel" aria-label="Profile snapshot">
+          <dl>
+            <div>
+              <dt>Based in</dt>
+              <dd>Add city or country</dd>
+            </div>
+            <div>
+              <dt>Interested in</dt>
+              <dd>Music, creative work, technology, people</dd>
+            </div>
+            <div>
+              <dt>Currently</dt>
+              <dd>Add what you are studying, building, or exploring</dd>
+            </div>
+          </dl>
+        </aside>
       </section>
 
-      <section class="section" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
-        <p>
-          Write a short introduction here: who you are, what you care about,
-          and what visitors should know first.
-        </p>
+      <section class="section split" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About me</h2>
+        <div class="section-body">
+          <p>
+            Write the version of your story that sounds like you: what you care
+            about, what makes you curious, what you are proud of, and what you
+            want people to understand after meeting you.
+          </p>
+          <p>
+            This section can mix personality and capability. It should feel
+            specific, not like a formal bio.
+          </p>
+        </div>
+      </section>
+
+      <section class="section split" id="chords" aria-labelledby="chords-title">
+        <h2 id="chords-title">Chord notes</h2>
+        <div class="chord-board">
+          <div class="chord-actions" aria-label="Guitar chord facts">
+            <button
+              type="button"
+              class="chord-button active"
+              data-title="C major"
+              data-fact="Use this for a warm fact about your personality, like how friends would describe you or what gives you energy."
+            >
+              C
+            </button>
+            <button
+              type="button"
+              class="chord-button"
+              data-title="G major"
+              data-fact="Use this for a project fact: the kind of thing you like building and the problems you enjoy solving."
+            >
+              G
+            </button>
+            <button
+              type="button"
+              class="chord-button"
+              data-title="A minor"
+              data-fact="Use this for a music fact: artists, songs, instruments, concerts, or how music fits into your life."
+            >
+              Am
+            </button>
+            <button
+              type="button"
+              class="chord-button"
+              data-title="F major"
+              data-fact="Use this for an achievement: something you earned, led, completed, improved, or learned the hard way."
+            >
+              F
+            </button>
+          </div>
+          <article class="chord-fact" aria-live="polite">
+            <h3 id="chord-title">C major</h3>
+            <p id="chord-fact">
+              Use this for a warm fact about your personality, like how friends
+              would describe you or what gives you energy.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-header">
           <h2 id="projects-title">Projects</h2>
-          <a href="mailto:hello@example.com">Get in touch</a>
+          <a href="mailto:hello@example.com">Contact</a>
         </div>
         <div class="project-list">
           <article class="project">
             <div>
-              <h3>Project One</h3>
-              <p>Add a short description of something you have made.</p>
+              <h3>Project name</h3>
+              <p>
+                What it is, why you made it, what you used, and what changed
+                because of it.
+              </p>
             </div>
-            <a href="#">View</a>
+            <a href="#">Link</a>
           </article>
           <article class="project">
             <div>
-              <h3>Project Two</h3>
-              <p>Add another project, portfolio piece, or achievement.</p>
+              <h3>Project name</h3>
+              <p>
+                Add a second project. This can be school, personal, creative, or
+                community work.
+              </p>
             </div>
-            <a href="#">View</a>
+            <a href="#">Link</a>
           </article>
           <article class="project">
             <div>
-              <h3>Project Three</h3>
-              <p>Use this space for a future idea or work in progress.</p>
+              <h3>Project name</h3>
+              <p>
+                Add a third project or something you are still developing.
+              </p>
             </div>
-            <a href="#">View</a>
+            <a href="#">Link</a>
           </article>
+        </div>
+      </section>
+
+      <section class="section split" id="achievements" aria-labelledby="achievements-title">
+        <h2 id="achievements-title">Achievements</h2>
+        <ul class="plain-list">
+          <li>Add an award, result, certification, leadership role, or milestone.</li>
+          <li>Add something you improved, organized, performed, or completed.</li>
+          <li>Add a moment that shows persistence, skill, or initiative.</li>
+        </ul>
+      </section>
+
+      <section class="section split" id="capabilities" aria-labelledby="capabilities-title">
+        <h2 id="capabilities-title">Capabilities</h2>
+        <ul class="tag-list">
+          <li>Creative direction</li>
+          <li>Project planning</li>
+          <li>Writing</li>
+          <li>Research</li>
+          <li>Communication</li>
+          <li>Add your skills</li>
+        </ul>
+      </section>
+
+      <section class="section split" id="interests" aria-labelledby="interests-title">
+        <h2 id="interests-title">Interests</h2>
+        <div class="section-body">
+          <p>
+            Music belongs here, but so do the other things that make you
+            memorable: books, places, causes, design, sport, film, fashion,
+            coding, photography, or anything you return to because it matters.
+          </p>
+        </div>
+      </section>
+
+      <section class="section split" id="links" aria-labelledby="links-title">
+        <h2 id="links-title">Links</h2>
+        <div class="link-list">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:hello@example.com">Email</a>
         </div>
       </section>
     </main>
