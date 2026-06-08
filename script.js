@@ -16,6 +16,17 @@ document.querySelectorAll(".interest-button").forEach((button) => {
   });
 });
 
+document.querySelectorAll(".entry-card").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelector(".entry-card.active")?.classList.remove("active");
+    button.classList.add("active");
+    document.querySelector("#entry-meta").textContent = button.dataset.entryMeta;
+    document.querySelector("#entry-title").textContent = button.dataset.entryTitle;
+    document.querySelector("#entry-copy").textContent = button.dataset.entryCopy;
+    document.body.dataset.theme = button.dataset.themeName;
+  });
+});
+
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {

@@ -170,7 +170,8 @@ p {
 .profile-panel,
 .project-list,
 .chord-fact,
-.interest-card {
+.interest-card,
+.entry-reader {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -249,10 +250,74 @@ p {
 }
 
 .chord-board,
-.interest-board {
+.interest-board,
+.scrapbook {
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);
   gap: 16px;
+}
+
+.entry-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.entry-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0 12px;
+  color: var(--ink);
+  background: var(--panel);
+  cursor: pointer;
+  font-weight: 700;
+  text-align: left;
+  transition:
+    border-color 140ms ease,
+    background 140ms ease,
+    color 140ms ease;
+}
+
+.entry-card svg {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.entry-card:hover,
+.entry-card:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-strong);
+}
+
+.entry-card.active {
+  border-color: var(--accent-strong);
+  color: #ffffff;
+  background: var(--accent-strong);
+}
+
+.entry-reader {
+  min-height: 236px;
+  padding: 20px;
+}
+
+.entry-reader p:first-child {
+  margin-bottom: 12px;
+  color: var(--accent-strong);
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.entry-reader p:last-child {
+  margin-bottom: 0;
 }
 
 .chord-neck {
@@ -465,7 +530,8 @@ p {
   .intro,
   .split,
   .chord-board,
-  .interest-board {
+  .interest-board,
+  .scrapbook {
     grid-template-columns: 1fr;
     gap: 20px;
   }
