@@ -714,12 +714,6 @@ p {
   grid-column: span 2;
 }
 
-.portfolio-card figcaption {
-  padding: 12px 14px;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
 .feature-photo {
   overflow: hidden;
   border: 1px solid var(--line);
