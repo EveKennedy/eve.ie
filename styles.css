@@ -7,7 +7,20 @@
   --accent: #d2b47d;
   --accent-strong: #f1d59b;
   --line: rgba(255, 245, 224, 0.2);
-  --backdrop: url("https://images.pexels.com/photos/17201550/pexels-photo-17201550.jpeg?auto=compress&cs=tinysrgb&w=1800");
+  --backdrop:
+    radial-gradient(circle at 20% 20%, rgba(210, 180, 125, 0.18), transparent 28%),
+    radial-gradient(circle at 75% 30%, rgba(130, 120, 95, 0.16), transparent 24%),
+    linear-gradient(135deg, #171411, #0d0c0b 58%, #1b1712);
+}
+
+body[data-theme="home"] {
+  --accent: #d2b47d;
+  --accent-strong: #f1d59b;
+  --line: rgba(255, 245, 224, 0.2);
+  --backdrop:
+    radial-gradient(circle at 20% 20%, rgba(210, 180, 125, 0.18), transparent 28%),
+    radial-gradient(circle at 75% 30%, rgba(130, 120, 95, 0.16), transparent 24%),
+    linear-gradient(135deg, #171411, #0d0c0b 58%, #1b1712);
 }
 
 body[data-theme="music"] {
