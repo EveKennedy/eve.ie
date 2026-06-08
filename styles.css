@@ -7,20 +7,14 @@
   --accent: #d2b47d;
   --accent-strong: #f1d59b;
   --line: rgba(255, 245, 224, 0.2);
-  --backdrop:
-    radial-gradient(circle at 20% 20%, rgba(210, 180, 125, 0.18), transparent 28%),
-    radial-gradient(circle at 75% 30%, rgba(130, 120, 95, 0.16), transparent 24%),
-    linear-gradient(135deg, #171411, #0d0c0b 58%, #1b1712);
+  --backdrop: none;
 }
 
 body[data-theme="home"] {
   --accent: #d2b47d;
   --accent-strong: #f1d59b;
   --line: rgba(255, 245, 224, 0.2);
-  --backdrop:
-    radial-gradient(circle at 20% 20%, rgba(210, 180, 125, 0.18), transparent 28%),
-    radial-gradient(circle at 75% 30%, rgba(130, 120, 95, 0.16), transparent 24%),
-    linear-gradient(135deg, #171411, #0d0c0b 58%, #1b1712);
+  --backdrop: none;
 }
 
 body[data-theme="music"] {
@@ -223,6 +217,38 @@ p {
   border-bottom: 0;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.chalk-board {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-bottom: 36px;
+  padding: 18px;
+  background: rgba(8, 9, 8, 0.76);
+}
+
+.chalk-board ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.chalk-board li {
+  color: rgba(255, 252, 238, 0.86);
+  font-family: "Bradley Hand", "Marker Felt", "Segoe Print", cursive;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.chalk-board li:nth-child(2n) {
+  margin-top: 8px;
+}
+
+.chalk-board li:nth-child(3n) {
+  color: rgba(241, 213, 155, 0.88);
 }
 
 .profile-panel dt {
