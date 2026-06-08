@@ -77,6 +77,82 @@ body {
     opacity 180ms ease;
 }
 
+.chalk-underlay {
+  position: fixed;
+  inset: 76px 4vw 4vw;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.chalk-underlay p {
+  position: absolute;
+  margin: 0;
+  color: rgba(255, 252, 238, 0.24);
+  font-family: "Bradley Hand", "Marker Felt", "Segoe Print", cursive;
+  font-size: clamp(1rem, 2.8vw, 2.1rem);
+  line-height: 1.1;
+}
+
+.chalk-underlay p:nth-child(1) {
+  top: 4%;
+  left: 3%;
+}
+
+.chalk-underlay p:nth-child(2) {
+  top: 16%;
+  right: 8%;
+}
+
+.chalk-underlay p:nth-child(3) {
+  top: 36%;
+  left: 9%;
+}
+
+.chalk-underlay p:nth-child(4) {
+  top: 55%;
+  right: 5%;
+}
+
+.chalk-underlay p:nth-child(5) {
+  top: 72%;
+  left: 6%;
+}
+
+.chalk-underlay p:nth-child(6) {
+  top: 84%;
+  right: 18%;
+}
+
+.chalk-underlay p:nth-child(7) {
+  top: 7%;
+  right: 34%;
+}
+
+.chalk-underlay p:nth-child(8) {
+  top: 45%;
+  right: 28%;
+}
+
+.chalk-underlay p:nth-child(9) {
+  top: 67%;
+  right: 44%;
+}
+
+.chalk-underlay p:nth-child(10) {
+  top: 26%;
+  left: 36%;
+}
+
+.chalk-underlay p:nth-child(11) {
+  top: 88%;
+  left: 38%;
+}
+
+.chalk-underlay p:nth-child(12) {
+  top: 24%;
+  left: 5%;
+}
+
 a {
   color: inherit;
 }
@@ -217,38 +293,6 @@ p {
   border-bottom: 0;
   padding-bottom: 0;
   margin-bottom: 0;
-}
-
-.chalk-board {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  margin-bottom: 36px;
-  padding: 18px;
-  background: rgba(8, 9, 8, 0.76);
-}
-
-.chalk-board ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 18px;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
-.chalk-board li {
-  color: rgba(255, 252, 238, 0.86);
-  font-family: "Bradley Hand", "Marker Felt", "Segoe Print", cursive;
-  font-size: 1rem;
-  line-height: 1.2;
-}
-
-.chalk-board li:nth-child(2n) {
-  margin-top: 8px;
-}
-
-.chalk-board li:nth-child(3n) {
-  color: rgba(241, 213, 155, 0.88);
 }
 
 .profile-panel dt {
