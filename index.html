@@ -7,22 +7,20 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
-  <body>
+  <body data-theme="music">
     <div class="backdrop" aria-hidden="true"></div>
     <header class="site-header">
-      <a class="brand" href="/">Eve Kennedy</a>
+      <a class="brand" href="index.html">Eve Kennedy</a>
       <nav class="nav" aria-label="Primary navigation">
-        <a href="#chords">Chords</a>
-        <a href="#projects">Projects</a>
-        <a href="#media-section">Media</a>
-        <a href="#photos">Photos</a>
-        <a href="#spark">Spark</a>
-        <a href="#links">Links</a>
+        <a href="stem.html">STEM</a>
+        <a href="music.html">Music</a>
+        <a href="media.html">Media</a>
+        <a href="spark.html">Spark</a>
       </nav>
     </header>
 
     <main class="page">
-      <section class="intro theme-section" aria-labelledby="intro-title" data-theme="home">
+      <section class="intro theme-section" aria-labelledby="intro-title" data-theme="music">
         <div>
           <h1 id="intro-title">Eve Kennedy</h1>
           <p>
@@ -42,392 +40,49 @@
               <dd>Starting 6th year and studying for the Leaving Cert</dd>
             </div>
             <div>
-              <dt>Interested in</dt>
-              <dd>STEM, music, radio, photography, videography, and community projects</dd>
+              <dt>Contact</dt>
+              <dd><a href="mailto:evek092@gmail.com">evek092@gmail.com</a></dd>
             </div>
           </dl>
         </aside>
       </section>
 
-      <section class="section split theme-section" id="scrapbook" aria-labelledby="scrapbook-title" data-theme="home">
-        <h2 id="scrapbook-title">Open the scrapbook</h2>
-        <div class="scrapbook">
-          <div class="entry-grid" aria-label="Scrapbook entries">
-            <button
-              type="button"
-              class="entry-card active"
-              data-theme-name="stem"
-              data-entry-title="Young Scientist"
-              data-entry-meta="Arduino, PIR sensor, nitinol, safety design"
-              data-entry-copy="I have competed in Young Scientist twice: first with a motion sensor wristband for visually impaired road users, then with a nitinol crumple-zone project looking at safer and easier vehicle repair."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M6 18h12M8 18V7h8v11M10 7V4h4v3M9 11h6M9 14h6" />
-              </svg>
-              Young Scientist
-            </button>
-            <button
-              type="button"
-              class="entry-card"
-              data-theme-name="music"
-              data-entry-title="Classical and live music"
-              data-entry-meta="Violin distinctions, guitar, open mics, original songs"
-              data-entry-copy="I am a fully classically trained violinist with all nine Trinity College London grades completed with distinctions. I have played guitar since I was seven, perform folk and acoustic rock covers, and write and produce my own songs."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M9 18V5l10-2v13" />
-                <circle cx="7" cy="18" r="2" />
-                <circle cx="17" cy="16" r="2" />
-              </svg>
-              Music
-            </button>
-            <button
-              type="button"
-              class="entry-card"
-              data-theme-name="media"
-              data-entry-title="Yaptime on Flirt FM"
-              data-entry-meta="Radio hosting, music, conversation"
-              data-entry-copy="Yaptime was my radio show on Flirt FM. It deserves a big place here because it shows the part of me that likes hosting, choosing music, talking naturally, and making something people can actually tune into."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="5" y="8" width="14" height="10" rx="2" />
-                <path d="M8 8 6 4M16 8l2-4M8 14h5M16 14h.01" />
-              </svg>
-              Yaptime
-            </button>
-            <button
-              type="button"
-              class="entry-card"
-              data-theme-name="community"
-              data-entry-title="Spark Innovation"
-              data-entry-meta="Assistant manager, social media, outreach, events"
-              data-entry-copy="I am assistant manager of Spark Innovation. I manage social media, work on outreach and event management, and do a lot of cold emailing to help create stronger STEM support around Headford and Galway."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="8" cy="8" r="3" />
-                <circle cx="17" cy="9" r="2.5" />
-                <path d="M3 20c1-4 8-4 10 0M13 20c1-3 6-3 8 0" />
-              </svg>
-              Spark
-            </button>
-            <button
-              type="button"
-              class="entry-card"
-              data-theme-name="media"
-              data-entry-title="Photo and video"
-              data-entry-meta="Local media work, events, social content"
-              data-entry-copy="I do photography and videography locally, especially when people need something practical, sharp, and ready to use for events, projects, organisations, or social media."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="4" y="6" width="12" height="10" rx="2" />
-                <path d="m16 10 4-2v8l-4-2" />
-              </svg>
-              Media
-            </button>
-          </div>
-          <article class="entry-reader" aria-live="polite">
-            <p id="entry-meta">Arduino, PIR sensor, nitinol, safety design</p>
-            <h3 id="entry-title">Young Scientist</h3>
-            <p id="entry-copy">
-              I have competed in Young Scientist twice: first with a motion
-              sensor wristband for visually impaired road users, then with a
-              nitinol crumple-zone project looking at safer and easier vehicle
-              repair.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split theme-section" id="chords" aria-labelledby="chords-title" data-theme="music">
-        <h2 id="chords-title">Click a chord</h2>
-        <div class="chord-board">
-          <div class="chord-neck" aria-label="Guitar chord facts">
-            <div class="fret-lines" aria-hidden="true">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <button
-              type="button"
-              class="chord-button active"
-              data-fact="I am drawn to projects that make technical ideas useful for people: safer roads, better repair systems, and student spaces that help people build earlier."
-            >
-              C
-            </button>
-            <button
-              type="button"
-              class="chord-button"
-              data-fact="I have played guitar since I was seven, perform folk and acoustic rock covers at open mics and local gigs, and write and produce my own songs."
-            >
-              G
-            </button>
-            <button
-              type="button"
-              class="chord-button"
-              data-fact="I am a fully classically trained violinist and completed all nine Trinity College London grades with distinctions."
-            >
-              D
-            </button>
-            <button
-              type="button"
-              class="chord-button"
-              data-fact="I had a radio show called Yaptime on Flirt FM, which is one of the clearest snapshots of my personality: music, conversation, curiosity, and a bit of controlled chaos."
-            >
-              Am
-            </button>
-            <button
-              type="button"
-              class="chord-button"
-              data-fact="I do photography and videography locally, making practical visual work for people who need events, projects, or organisations to look more alive online."
-            >
-              Bm
-            </button>
-            <button
-              type="button"
-              class="chord-button"
-              data-fact="I am assistant manager of Spark Innovation, manage its social media, work on outreach and events, and do a lot of cold emailing."
-            >
-              Em
-            </button>
-            <button
-              type="button"
-              class="chord-button"
-              data-fact="I have competed at Young Scientist twice and won awards for medical-device thinking, road safety, and safety innovation."
-            >
-              F
-            </button>
-          </div>
-          <article class="chord-fact" aria-live="polite">
-            <p id="chord-fact">
-              I am drawn to projects that make technical ideas useful for people:
-              safer roads, better repair systems, and student spaces that help
-              people build earlier.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split theme-section" id="interests" aria-labelledby="interests-title" data-theme="stem">
-        <h2 id="interests-title">Interest board</h2>
-        <div class="interest-board">
-          <div class="interest-tabs" aria-label="Interests">
-            <button
-              type="button"
-              class="interest-button active"
-              data-interest-title="STEM"
-              data-interest-copy="I like STEM most when it becomes testable and useful. My Young Scientist projects have covered an Arduino and PIR sensor wristband for visually impaired road users, plus nitinol crumple zones for safer and easier car repairs."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M5 12h14M12 5v14M7 7l10 10M17 7 7 17" />
-                <circle cx="12" cy="12" r="2" />
-              </svg>
-              STEM
-            </button>
-            <button
-              type="button"
-              class="interest-button"
-              data-interest-title="Music"
-              data-interest-copy="Music is both disciplined and social for me: classical violin training to grade nine distinction, guitar since childhood, open mics, local gigs, folk and acoustic rock covers, and my own songs."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M9 18V5l10-2v13" />
-                <circle cx="7" cy="18" r="2" />
-                <circle cx="17" cy="16" r="2" />
-              </svg>
-              Music
-            </button>
-            <button
-              type="button"
-              class="interest-button"
-              data-interest-title="Media"
-              data-interest-copy="Media is where I get to be practical and expressive at the same time: Yaptime on Flirt FM, local photography and videography, and social content for Spark Innovation."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="4" y="6" width="12" height="10" rx="2" />
-                <path d="m16 10 4-2v8l-4-2" />
-              </svg>
-              Media
-            </button>
-            <button
-              type="button"
-              class="interest-button"
-              data-interest-title="Community"
-              data-interest-copy="Through Spark Innovation, I help create student-led spaces where people can prototype, meet speakers, and get support around STEM in Headford and Galway."
-            >
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <circle cx="8" cy="8" r="3" />
-                <circle cx="17" cy="9" r="2.5" />
-                <path d="M3 20c1-4 8-4 10 0M13 20c1-3 6-3 8 0" />
-              </svg>
-              Community
-            </button>
-          </div>
-          <article class="interest-card" aria-live="polite">
-            <h3 id="interest-title">STEM</h3>
-            <p id="interest-copy">
-              I like STEM most when it becomes testable and useful. My Young
-              Scientist projects have covered an Arduino and PIR sensor wristband
-              for visually impaired road users, plus nitinol crumple zones for
-              safer and easier car repairs.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section theme-section" id="projects" aria-labelledby="projects-title" data-theme="stem">
-        <div class="section-header">
-          <h2 id="projects-title">Projects</h2>
-          <p>Selected work</p>
-        </div>
-        <div class="project-list">
-          <article class="project">
-            <div>
-              <h3>Motion sensor wristband</h3>
-              <p>
-                A Young Scientist 2023 project using an Arduino, PIR sensor, and
-                buzzer to alert visually impaired users to oncoming vehicles
-                through infrared movement detection and a wrist buzz.
-              </p>
-            </div>
-            <a href="https://scifest.ie/Page/Atlantic-Technological-University-Galway-Awards-2023/519199/Index.html" target="_blank" rel="noreferrer">SciFest</a>
-          </article>
-          <article class="project">
-            <div>
-              <h3>Memory metal crumple zones</h3>
-              <p>
-                A Young Scientist project investigating nitinol as a material
-                for car crumple zones, with the aim of making repairs safer,
-                cheaper, and less wasteful.
-              </p>
-            </div>
-            <a href="https://stripeyste.com/winners-2026-full" target="_blank" rel="noreferrer">Award</a>
-          </article>
-          <article class="project">
-            <div>
-              <h3>Reforma</h3>
-              <p>
-                A team business concept developed from the crumple-zone project
-                during Stripe Young Scientist Business Bootcamp, winning the
-                inaugural bootcamp.
-              </p>
-            </div>
-            <a href="https://www.linkedin.com/posts/university-college-dublin_a-team-of-five-secondary-school-activity-7454462631001747456-KYTx" target="_blank" rel="noreferrer">UCD</a>
-          </article>
-          <article class="project">
-            <div>
-              <h3>Spark Innovation</h3>
-              <p>
-                A student-led STEM organisation running clubs in Headford and
-                Galway, with meetings, speakers, and practical support for young
-                people who want to build.
-              </p>
-            </div>
-            <a href="https://sparkinnovationireland.com" target="_blank" rel="noreferrer">Spark</a>
-          </article>
-          <article class="project" id="media">
-            <div>
-              <h3>Yaptime on Flirt FM</h3>
-              <p>
-                My radio show on Flirt FM, bringing together music,
-                conversation, opinions, and the kind of unscripted personality
-                that makes local radio interesting.
-              </p>
-            </div>
-            <a href="https://flirtfm.ie" target="_blank" rel="noreferrer">Flirt FM</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section split theme-section" id="media-section" aria-labelledby="media-title" data-theme="media">
-        <h2 id="media-title">Radio and media</h2>
-        <div class="section-body">
-          <p>
-            Yaptime on Flirt FM deserves its own space because it shows the part
-            of me that likes hosting, choosing music, talking naturally, and
-            making something people can actually tune into.
-          </p>
-          <p>
-            Outside radio, I do photography and videography locally, and I use
-            those skills for Spark Innovation's social media.
-          </p>
-        </div>
-      </section>
-
-      <section class="section theme-section" id="photos" aria-labelledby="photos-title" data-theme="media">
-        <div class="section-header">
-          <h2 id="photos-title">Photo spaces</h2>
-          <p>Ready for uploads</p>
-        </div>
-        <div class="photo-grid">
-          <div class="photo-slot">Young Scientist photo</div>
-          <div class="photo-slot">Guitar or gig photo</div>
-          <div class="photo-slot">Violin photo</div>
-          <div class="photo-slot">Spark meeting photo</div>
-          <div class="photo-slot">Yaptime or Flirt FM photo</div>
-          <div class="photo-slot">Photography or video work</div>
-        </div>
-      </section>
-
-      <section class="section split theme-section" id="achievements" aria-labelledby="achievements-title" data-theme="stem">
-        <h2 id="achievements-title">Achievements</h2>
-        <ul class="plain-list">
-          <li>AirNav Ireland Safety Innovation Award at Stripe Young Scientist for Memory metal crumple zones.</li>
-          <li>Runner-up best project at SciFest regional Galway for the nitinol crumple-zone project.</li>
-          <li>Boston Scientific Medical Devices Award at SciFest Galway for a motion sensor wristband project.</li>
-          <li>Winner of the inaugural Stripe Young Scientist Business Bootcamp with Reforma.</li>
-          <li>Completed all nine Trinity College London violin grades with distinctions.</li>
-          <li>Hosted Yaptime on Flirt FM.</li>
-        </ul>
-      </section>
-
-      <section class="section split theme-section" id="spark" aria-labelledby="spark-title" data-theme="community">
-        <h2 id="spark-title">Spark Innovation</h2>
-        <div class="section-body">
-          <p>
-            I am currently assistant manager of Spark Innovation. We run STEM
-            clubs in Headford and Galway, hold regular meetings, and bring in
-            speakers so students have more support if they want to build,
-            compete, or explore STEM seriously.
-          </p>
-          <p>
-            I manage Spark's social media, work on outreach and event
-            management, and do a lot of cold emailing to help the organisation
-            grow.
-          </p>
-        </div>
-      </section>
-
-      <section class="section split theme-section" id="capabilities" aria-labelledby="capabilities-title" data-theme="community">
-        <h2 id="capabilities-title">Capabilities</h2>
-        <ul class="tag-list">
-          <li>Scientific research</li>
-          <li>Prototyping</li>
-          <li>Public speaking</li>
-          <li>Radio hosting</li>
-          <li>Classical violin</li>
-          <li>Songwriting</li>
-          <li>Music production</li>
-          <li>Music performance</li>
-          <li>Photography</li>
-          <li>Videography</li>
-          <li>Social media</li>
-          <li>Outreach</li>
-          <li>Event management</li>
-          <li>Cold emailing</li>
-          <li>Community leadership</li>
-        </ul>
-      </section>
-
-      <section class="section split theme-section" id="features" aria-labelledby="features-title" data-theme="stem">
-        <h2 id="features-title">Features</h2>
-        <div class="link-list">
-          <a href="https://www.galwaybayfm.ie/galway-bay-fm-news-desk/galway-students-win-eight-awards-at-2026-stripe-young-scientist-of-the-year-211219" target="_blank" rel="noreferrer">Galway Bay FM</a>
-          <a href="https://www.rsa.ie/road-safety/education/road-safety-awards/young-scientist-road-safety-entrants" target="_blank" rel="noreferrer">Road Safety Authority</a>
-          <a href="https://stripeyste.com/winners-2026-full" target="_blank" rel="noreferrer">Stripe Young Scientist</a>
-          <a href="https://scifest.ie/Page/Atlantic-Technological-University-Galway-Awards-2023/519199/Index.html" target="_blank" rel="noreferrer">SciFest Galway</a>
+      <section class="section split theme-section" aria-labelledby="topics-title" data-theme="music">
+        <h2 id="topics-title">Choose a page</h2>
+        <div class="topic-grid">
+          <a class="topic-card" href="stem.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M6 18h12M8 18V7h8v11M10 7V4h4v3M9 11h6M9 14h6" />
+            </svg>
+            <h3>STEM</h3>
+            <p>Young Scientist projects, awards, Reforma, and research work.</p>
+          </a>
+          <a class="topic-card" href="music.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 18V5l10-2v13" />
+              <circle cx="7" cy="18" r="2" />
+              <circle cx="17" cy="16" r="2" />
+            </svg>
+            <h3>Music</h3>
+            <p>Classical violin, guitar, open mics, covers, and original songs.</p>
+          </a>
+          <a class="topic-card" href="media.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="5" y="8" width="14" height="10" rx="2" />
+              <path d="M8 8 6 4M16 8l2-4M8 14h5M16 14h.01" />
+            </svg>
+            <h3>Media</h3>
+            <p>Yaptime on Flirt FM, photography, videography, and social work.</p>
+          </a>
+          <a class="topic-card" href="spark.html">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="8" cy="8" r="3" />
+              <circle cx="17" cy="9" r="2.5" />
+              <path d="M3 20c1-4 8-4 10 0M13 20c1-3 6-3 8 0" />
+            </svg>
+            <h3>Spark Innovation</h3>
+            <p>Assistant manager work, outreach, events, and STEM clubs.</p>
+          </a>
         </div>
       </section>
 
