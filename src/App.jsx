@@ -42,7 +42,6 @@ function getPageFromHash() {
 
 export function App() {
   const [page, setPage] = useState(getPageFromHash);
-  const [entered, setEntered] = useState(false);
 
   useEffect(() => {
     const syncPage = () => setPage(getPageFromHash());
@@ -57,7 +56,6 @@ export function App() {
   return (
     <>
       <div className="backdrop" aria-hidden="true" />
-      {!entered ? <StrumGate onEnter={() => setEntered(true)} /> : null}
       {page === "home" ? <ChalkUnderlay /> : null}
       <header className="site-header">
         <a className="brand" href="#home">
@@ -80,93 +78,6 @@ export function App() {
         {page === "home" ? <Home /> : null}
       </main>
     </>
-  );
-}
-
-function StrumGate({ onEnter }) {
-  const [active, setActive] = useState(false);
-  const [strings, setStrings] = useState([]);
-  const complete = strings.length === 6;
-
-  useEffect(() => {
-    if (!complete) {
-      return;
-    }
-
-    const timer = window.setTimeout(onEnter, 260);
-    return () => window.clearTimeout(timer);
-  }, [complete, onEnter]);
-
-  function markString(value) {
-    if (!active) {
-      return;
-    }
-
-    setStrings((current) => (current.includes(value) ? current : [...current, value]));
-  }
-
-  function markMovedString(event) {
-    if (!active) {
-      return;
-    }
-
-    const box = event.currentTarget.getBoundingClientRect();
-    const index = Math.min(6, Math.max(1, Math.floor(((event.clientY - box.top) / box.height) * 6) + 1));
-    markString(String(index));
-  }
-
-  return (
-    <section className="entry-gate" aria-label="Strum the guitar to enter">
-      <div className="entry-copy">
-        <h1>Eve Kennedy</h1>
-        <p>Strum the guitar to open the scrapbook.</p>
-      </div>
-      <div
-        className={`guitar ${complete ? "complete" : ""}`}
-        onPointerDown={() => {
-          setActive(true);
-          setStrings([]);
-        }}
-        onPointerUp={() => setActive(false)}
-        onPointerLeave={() => setActive(false)}
-      >
-        <div className="guitar-body">
-          <div className="guitar-waist" />
-          <div className="sound-hole" />
-          <div className="rosette" />
-          <div className="pickguard" />
-          <div className="bridge" />
-          <div className="bridge-saddle" />
-        </div>
-        <div className="guitar-neck" onPointerMove={markMovedString}>
-          <div className="frets" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-            <span />
-          </div>
-          {["1", "2", "3", "4", "5", "6"].map((string) => (
-            <button
-              aria-label={`String ${string}`}
-              className={strings.includes(string) ? "string played" : "string"}
-              key={string}
-              onFocus={() => setStrings((current) => (current.includes(string) ? current : [...current, string]))}
-              type="button"
-            />
-          ))}
-        </div>
-        <div className="headstock" aria-hidden="true">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
-        </div>
-      </div>
-    </section>
   );
 }
 
