@@ -131,10 +131,22 @@ function StrumGate({ onEnter }) {
         onPointerLeave={() => setActive(false)}
       >
         <div className="guitar-body">
+          <div className="guitar-waist" />
           <div className="sound-hole" />
+          <div className="rosette" />
+          <div className="pickguard" />
           <div className="bridge" />
+          <div className="bridge-saddle" />
         </div>
         <div className="guitar-neck" onPointerMove={markMovedString}>
+          <div className="frets" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+            <span />
+          </div>
           {["1", "2", "3", "4", "5", "6"].map((string) => (
             <button
               aria-label={`String ${string}`}
@@ -144,6 +156,14 @@ function StrumGate({ onEnter }) {
               type="button"
             />
           ))}
+        </div>
+        <div className="headstock" aria-hidden="true">
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
+          <span />
         </div>
       </div>
     </section>
